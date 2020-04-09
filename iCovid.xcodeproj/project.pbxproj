@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9507A76243D611D00B44236 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9507A75243D611D00B44236 /* Timer.swift */; };
+		B9507A78243D63D700B44236 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9507A77243D63D700B44236 /* StartButton.swift */; };
+		B9507A7A243D662500B44236 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9507A79243D662500B44236 /* TimerViewController.swift */; };
 		EEBA75B1243AD40A00DE1462 /* iCovid WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EEBA75B0243AD40A00DE1462 /* iCovid WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EEBA75B7243AD40A00DE1462 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBA75B5243AD40A00DE1462 /* Interface.storyboard */; };
 		EEBA75B9243AD40E00DE1462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBA75B8243AD40E00DE1462 /* Assets.xcassets */; };
@@ -63,6 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B9507A75243D611D00B44236 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		B9507A77243D63D700B44236 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		B9507A79243D662500B44236 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		EEBA75AC243AD40A00DE1462 /* iCovid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCovid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBA75B0243AD40A00DE1462 /* iCovid WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCovid WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBA75B6243AD40A00DE1462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 			children = (
 				EEBA75C4243AD40E00DE1462 /* ContentView.swift */,
 				EEBA75C6243AD40E00DE1462 /* HostingController.swift */,
+				B9507A79243D662500B44236 /* TimerViewController.swift */,
 				EEBA75C8243AD40E00DE1462 /* ExtensionDelegate.swift */,
 				EEBA75CA243AD40E00DE1462 /* NotificationController.swift */,
 				EEBA75CC243AD40E00DE1462 /* NotificationView.swift */,
@@ -132,6 +139,8 @@
 				EEBA75D3243AD40F00DE1462 /* Info.plist */,
 				EEBA75D4243AD40F00DE1462 /* PushNotificationPayload.apns */,
 				EEBA75D0243AD40F00DE1462 /* Preview Content */,
+				B9507A75243D611D00B44236 /* Timer.swift */,
+				B9507A77243D63D700B44236 /* StartButton.swift */,
 			);
 			path = "iCovid WatchKit Extension";
 			sourceTree = "<group>";
@@ -275,8 +284,11 @@
 				EEBA75C7243AD40E00DE1462 /* HostingController.swift in Sources */,
 				EEBA75C5243AD40E00DE1462 /* ContentView.swift in Sources */,
 				EEBA75CB243AD40E00DE1462 /* NotificationController.swift in Sources */,
+				B9507A76243D611D00B44236 /* Timer.swift in Sources */,
+				B9507A7A243D662500B44236 /* TimerViewController.swift in Sources */,
 				EEBA75C9243AD40E00DE1462 /* ExtensionDelegate.swift in Sources */,
 				EEBA75CD243AD40E00DE1462 /* NotificationView.swift in Sources */,
+				B9507A78243D63D700B44236 /* StartButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

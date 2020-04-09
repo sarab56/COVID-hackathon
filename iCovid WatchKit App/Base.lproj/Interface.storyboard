@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14815" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qom-rP-kqd">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14770"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14621"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--Hosting Controller-->
         <scene sceneID="RUd-og-cv4">
             <objects>
-                <hostingController id="NBu-mt-KyX" customClass="HostingController" 
-                customModuleProvider="target"/>                
+                <hostingController id="NBu-mt-KyX" customClass="HostingController" customModule="iCovid_WatchKit_Extension"/>
             </objects>
             <point key="canvasLocation" x="187" y="141"/>
         </scene>
@@ -30,11 +29,35 @@
             </objects>
             <point key="canvasLocation" x="187" y="462"/>
         </scene>
-        <!--Notification Hosting Controller-->
+        <!--Timer View Controller-->
+        <scene sceneID="8u5-OB-cbW">
+            <objects>
+                <controller id="qom-rP-kqd" customClass="TimerViewController" customModule="iCovid_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="ysl-14-bjm" customClass="StartButton" customModule="iCovid_WatchKit_Extension">
+                            <color key="titleColor" red="0.94066973330000003" green="1" blue="0.95437640160000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.038083084679999997" green="0.76938957249999995" blue="0.028220092660000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="startButtonPressed:" destination="qom-rP-kqd" id="pEG-ns-i8I"/>
+                            </connections>
+                        </button>
+                        <timer alignment="left" accessibilityLabel="31" accessibilityValue="30" id="P4k-NW-kHu" customClass="Timer" customModule="iCovid_WatchKit_Extension"/>
+                    </items>
+                    <connections>
+                        <outlet property="TimerOutlet" destination="P4k-NW-kHu" id="0a4-ag-zGp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="646" y="124"/>
+        </scene>
+        <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController"
-                customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="iCovid_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <timer alignment="left" id="fxg-Zd-TID"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="488" y="462"/>
         </scene>
