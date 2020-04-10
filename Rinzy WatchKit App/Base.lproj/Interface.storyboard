@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Rinzy_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="center" text="Rinzy" textAlignment="center" id="wLT-PE-4IV">
+                            <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <button width="1" alignment="center" title="Click to Begin!" id="ndl-ii-qWd">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="jTp-FI-74i" kind="push" id="XSO-nX-CDS"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="audioPlayer" destination="ndl-ii-qWd" id="YT4-tj-TkH"/>
+                        <segue destination="ae0-f6-uny" kind="relationship" relationship="nextPage" id="IZn-O2-cnt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="212" y="326"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Rinzy_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="r5H-4d-VSG">
+            <objects>
+                <controller id="12I-PT-EaV"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="656"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Rinzy_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="326"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="krH-yy-xu4">
+            <objects>
+                <controller id="Qc6-gf-nSQ"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="326"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="6dp-ot-tTx">
+            <objects>
+                <controller id="jTp-FI-74i">
+                    <items>
+                        <label width="136" alignment="center" text="Begin!" textAlignment="center" id="bty-kO-8Wd">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <timer width="125" height="87" alignment="center" verticalAlignment="center" semanticContentAttribute="forceLeftToRight" textAlignment="center" enabled="YES" format="short" previewedSeconds="30" id="wgo-oa-C04">
+                            <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                            <calendarUnit key="units" second="YES"/>
+                        </timer>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="718" y="326"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="XIo-46-zd5">
+            <objects>
+                <controller id="ae0-f6-uny">
+                    <items>
+                        <inlineMovie width="1" height="100" alignment="center" verticalAlignment="center" id="pZD-1k-Act"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="718" y="326"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44202F45243ECF700045F796 /* drips.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44202F47243ECF700045F796 /* drips.mp3 */; };
+		44202F48243ECF750045F796 /* drips.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44202F47243ECF700045F796 /* drips.mp3 */; };
+		44202F4A243ED1750045F796 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C5E180243CF5BF009AD049 /* Interface.storyboard */; };
+		44C5E17C243CF5BF009AD049 /* Rinzy WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 44C5E17B243CF5BF009AD049 /* Rinzy WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44C5E182243CF5BF009AD049 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C5E180243CF5BF009AD049 /* Interface.storyboard */; };
+		44C5E184243CF5C0009AD049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C5E183243CF5C0009AD049 /* Assets.xcassets */; };
+		44C5E18B243CF5C1009AD049 /* Rinzy WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44C5E18A243CF5C1009AD049 /* Rinzy WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44C5E190243CF5C1009AD049 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C5E18F243CF5C1009AD049 /* InterfaceController.swift */; };
+		44C5E192243CF5C1009AD049 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C5E191243CF5C1009AD049 /* ExtensionDelegate.swift */; };
+		44C5E194243CF5C1009AD049 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C5E193243CF5C1009AD049 /* NotificationController.swift */; };
+		44C5E196243CF5C1009AD049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C5E195243CF5C1009AD049 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44C5E17D243CF5BF009AD049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44C5E171243CF5BF009AD049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44C5E17A243CF5BF009AD049;
+			remoteInfo = "Rinzy WatchKit App";
+		};
+		44C5E18C243CF5C1009AD049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44C5E171243CF5BF009AD049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44C5E189243CF5C1009AD049;
+			remoteInfo = "Rinzy WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44C5E19E243CF5C1009AD049 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44C5E18B243CF5C1009AD049 /* Rinzy WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C5E1A2243CF5C1009AD049 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				44C5E17C243CF5BF009AD049 /* Rinzy WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44202F46243ECF700045F796 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = en; path = en.lproj/drips.mp3; sourceTree = "<group>"; };
+		44C5E177243CF5BF009AD049 /* Rinzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rinzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C5E17B243CF5BF009AD049 /* Rinzy WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rinzy WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C5E181243CF5BF009AD049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		44C5E183243CF5C0009AD049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44C5E185243CF5C0009AD049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C5E18A243CF5C1009AD049 /* Rinzy WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rinzy WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C5E18F243CF5C1009AD049 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		44C5E191243CF5C1009AD049 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		44C5E193243CF5C1009AD049 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		44C5E195243CF5C1009AD049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44C5E197243CF5C1009AD049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C5E198243CF5C1009AD049 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		44C5E1A8243D36A9009AD049 /* Wash Your Hands.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wash Your Hands.mp4"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44C5E187243CF5C1009AD049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44C5E170243CF5BF009AD049 = {
+			isa = PBXGroup;
+			children = (
+				44C5E17F243CF5BF009AD049 /* Rinzy WatchKit App */,
+				44C5E18E243CF5C1009AD049 /* Rinzy WatchKit Extension */,
+				44C5E178243CF5BF009AD049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44C5E178243CF5BF009AD049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44C5E177243CF5BF009AD049 /* Rinzy.app */,
+				44C5E17B243CF5BF009AD049 /* Rinzy WatchKit App.app */,
+				44C5E18A243CF5C1009AD049 /* Rinzy WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44C5E17F243CF5BF009AD049 /* Rinzy WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				44C5E180243CF5BF009AD049 /* Interface.storyboard */,
+				44C5E183243CF5C0009AD049 /* Assets.xcassets */,
+				44C5E185243CF5C0009AD049 /* Info.plist */,
+			);
+			path = "Rinzy WatchKit App";
+			sourceTree = "<group>";
+		};
+		44C5E18E243CF5C1009AD049 /* Rinzy WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44C5E18F243CF5C1009AD049 /* InterfaceController.swift */,
+				44202F47243ECF700045F796 /* drips.mp3 */,
+				44C5E1A8243D36A9009AD049 /* Wash Your Hands.mp4 */,
+				44C5E191243CF5C1009AD049 /* ExtensionDelegate.swift */,
+				44C5E193243CF5C1009AD049 /* NotificationController.swift */,
+				44C5E195243CF5C1009AD049 /* Assets.xcassets */,
+				44C5E197243CF5C1009AD049 /* Info.plist */,
+				44C5E198243CF5C1009AD049 /* PushNotificationPayload.apns */,
+			);
+			path = "Rinzy WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44C5E176243CF5BF009AD049 /* Rinzy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C5E1A3243CF5C1009AD049 /* Build configuration list for PBXNativeTarget "Rinzy" */;
+			buildPhases = (
+				44C5E175243CF5BF009AD049 /* Resources */,
+				44C5E1A2243CF5C1009AD049 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C5E17E243CF5BF009AD049 /* PBXTargetDependency */,
+			);
+			name = Rinzy;
+			productName = Rinzy;
+			productReference = 44C5E177243CF5BF009AD049 /* Rinzy.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		44C5E17A243CF5BF009AD049 /* Rinzy WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C5E19F243CF5C1009AD049 /* Build configuration list for PBXNativeTarget "Rinzy WatchKit App" */;
+			buildPhases = (
+				44C5E179243CF5BF009AD049 /* Resources */,
+				44C5E19E243CF5C1009AD049 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C5E18D243CF5C1009AD049 /* PBXTargetDependency */,
+			);
+			name = "Rinzy WatchKit App";
+			productName = "Rinzy WatchKit App";
+			productReference = 44C5E17B243CF5BF009AD049 /* Rinzy WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		44C5E189243CF5C1009AD049 /* Rinzy WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C5E19B243CF5C1009AD049 /* Build configuration list for PBXNativeTarget "Rinzy WatchKit Extension" */;
+			buildPhases = (
+				44C5E186243CF5C1009AD049 /* Sources */,
+				44C5E187243CF5C1009AD049 /* Frameworks */,
+				44C5E188243CF5C1009AD049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rinzy WatchKit Extension";
+			productName = "Rinzy WatchKit Extension";
+			productReference = 44C5E18A243CF5C1009AD049 /* Rinzy WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44C5E171243CF5BF009AD049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = KASE;
+				TargetAttributes = {
+					44C5E176243CF5BF009AD049 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					44C5E17A243CF5BF009AD049 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					44C5E189243CF5C1009AD049 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 44C5E174243CF5BF009AD049 /* Build configuration list for PBXProject "Rinzy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44C5E170243CF5BF009AD049;
+			productRefGroup = 44C5E178243CF5BF009AD049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44C5E176243CF5BF009AD049 /* Rinzy */,
+				44C5E17A243CF5BF009AD049 /* Rinzy WatchKit App */,
+				44C5E189243CF5C1009AD049 /* Rinzy WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44C5E175243CF5BF009AD049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C5E179243CF5BF009AD049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C5E184243CF5C0009AD049 /* Assets.xcassets in Resources */,
+				44202F48243ECF750045F796 /* drips.mp3 in Resources */,
+				44C5E182243CF5BF009AD049 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C5E188243CF5C1009AD049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C5E196243CF5C1009AD049 /* Assets.xcassets in Resources */,
+				44202F4A243ED1750045F796 /* Interface.storyboard in Resources */,
+				44202F45243ECF700045F796 /* drips.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44C5E186243CF5C1009AD049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C5E194243CF5C1009AD049 /* NotificationController.swift in Sources */,
+				44C5E192243CF5C1009AD049 /* ExtensionDelegate.swift in Sources */,
+				44C5E190243CF5C1009AD049 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C5E17E243CF5BF009AD049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44C5E17A243CF5BF009AD049 /* Rinzy WatchKit App */;
+			targetProxy = 44C5E17D243CF5BF009AD049 /* PBXContainerItemProxy */;
+		};
+		44C5E18D243CF5C1009AD049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44C5E189243CF5C1009AD049 /* Rinzy WatchKit Extension */;
+			targetProxy = 44C5E18C243CF5C1009AD049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44202F47243ECF700045F796 /* drips.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44202F46243ECF700045F796 /* en */,
+			);
+			name = drips.mp3;
+			sourceTree = "<group>";
+		};
+		44C5E180243CF5BF009AD049 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C5E181243CF5BF009AD049 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44C5E199243CF5C1009AD049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44C5E19A243CF5C1009AD049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44C5E19C243CF5C1009AD049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YA4TJ3XTH;
+				INFOPLIST_FILE = "Rinzy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RinzyApp.Rinzy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		44C5E19D243CF5C1009AD049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YA4TJ3XTH;
+				INFOPLIST_FILE = "Rinzy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RinzyApp.Rinzy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		44C5E1A0243CF5C1009AD049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YA4TJ3XTH;
+				IBSC_MODULE = Rinzy_WatchKit_Extension;
+				INFOPLIST_FILE = "Rinzy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RinzyApp.Rinzy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		44C5E1A1243CF5C1009AD049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YA4TJ3XTH;
+				IBSC_MODULE = Rinzy_WatchKit_Extension;
+				INFOPLIST_FILE = "Rinzy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RinzyApp.Rinzy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		44C5E1A4243CF5C1009AD049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YA4TJ3XTH;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RinzyApp.Rinzy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44C5E1A5243CF5C1009AD049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YA4TJ3XTH;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RinzyApp.Rinzy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44C5E174243CF5BF009AD049 /* Build configuration list for PBXProject "Rinzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C5E199243CF5C1009AD049 /* Debug */,
+				44C5E19A243CF5C1009AD049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C5E19B243CF5C1009AD049 /* Build configuration list for PBXNativeTarget "Rinzy WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C5E19C243CF5C1009AD049 /* Debug */,
+				44C5E19D243CF5C1009AD049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C5E19F243CF5C1009AD049 /* Build configuration list for PBXNativeTarget "Rinzy WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C5E1A0243CF5C1009AD049 /* Debug */,
+				44C5E1A1243CF5C1009AD049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C5E1A3243CF5C1009AD049 /* Build configuration list for PBXNativeTarget "Rinzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C5E1A4243CF5C1009AD049 /* Debug */,
+				44C5E1A5243CF5C1009AD049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44C5E171243CF5BF009AD049 /* Project object */;
+}
